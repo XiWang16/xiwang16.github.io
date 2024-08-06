@@ -1,33 +1,33 @@
 ---
 import Card from "./Card/index.astro";
+import Button from "./Button.astro";
+import { LINKS } from "../lib/constants";
+import { Icon } from "astro-icon/components";
 ---
 
 <Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About me">
   <div class="flex flex-col gap-2">
     <div class="text-sm font-light">
       <p>
-        Hi, I'm Gianmarco, a front-end software developer from Italy.
+        I'm in my final year of undergrad at the University of Toronto, studying
+        Computer Science and Cognitive Science.
         <br />
-        My primary tools of choice includes:
+        Interdisciplinarity inspires me. I've independently and collaboratively worked
+        on research projects that pertain disparate fields, from social-cognitive
+        psychology to Indigenous studies.
       </p>
-      <ul class="list-disc list-inside">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Solidjs</li>
-        <li>Astro</li>
-        <li>svelte</li>
-        <li>Nodejs</li>
-      </ul>
+      <p class="text-sm font-light">
+        I enjoy healthy living and staying active. When not pondering about
+        life's big questions, you may find me cooking a hearty vegetarian dish
+        or jogging to some 5SOS songs. I also fenced for 10 years and once
+        placed national 8th in China (#thegoodolddays).
+      </p>
+      <!-- <a href={LINKS.github} aria-label="curriculum vitae" target="_blank">
+        <Button aria-label="curriculum vitae">
+          <Icon name="ri:github-fill" class="h-6" />
+          <span class="sr-only">Curriculum Vitae</span>
+        </Button>
+      </a> -->
     </div>
-    <p class="text-sm font-light">
-      Beyond coding, I'm passionate about design, illustration, animation and 3D modelling and traveling.
-      An unusual hobby of mine is collecting vintage passports, they're
-      interesting pieces of history to me.
-    </p>
-    <p class="text-sm font-light">
-      While I have some preferred tools, I always choose the best one for the
-      job, even if it's not on my usual list. My goal is to find the right
-      solution for each project.
-    </p>
   </div>
 </Card>

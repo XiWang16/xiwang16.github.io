@@ -1,9 +1,9 @@
 ---
 import Card from "./Card/index.astro";
-import Button from "./Button.astro";
-import { LINKS } from "../lib/constants";
-import { Icon } from 'astro-icon/components'
-import Tooltip from "./Tooltip/index";
+// import Button from "./Button.astro";
+// import { LINKS } from "../lib/constants";
+// import { Icon } from "astro-icon/components";
+// import Tooltip from "./Tooltip/index";
 import { Image } from "astro:assets";
 ---
 
@@ -11,15 +11,32 @@ import { Image } from "astro:assets";
   <div class="flex w-full h-full">
     <div class="flex flex-col justify-between md:max-h-[300px] gap-4">
       <div class="flex flex-col h-full">
-        <h6 class="text-sm font-light m-0 text-gray-500">welcome</h6>
+        <h6 class="text-sm font-light m-0 text-gray-500">welcome :)</h6>
         <p class="m-0 font-light text-xl">
-          Hi, I'm <b class="font-bold">Gianmarco Cavallo</b>, a software
-          developer with strong focus on the user experience, animations and
-          micro interactions
+          My name is <b class="font-bold">Xi Wang (王希)</b>, and I go by <b
+            class="font-bold">Joy</b
+          >. Born and raised in the beautiful city <a
+            href="https://www.google.com/search?q=suzhou&newwindow=1&sca_esv=d3799be6f015f4e8&sca_upv=1&rlz=1C5CHFA_enCA1037CA1039&sxsrf=ADLYWIIvv3hAiwxNEK2XNZ17NuVYoYH2ng%3A1722976248745&ei=-IeyZuSfLeTaptQPnZaGiAk&ved=0ahUKEwjk-4zamuGHAxVkrYkEHR2LAZEQ4dUDCBA&uact=5&oq=suzhou&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnN1emhvdTIKEAAYgAQYQxiKBTINEC4YgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIFEC4YgAQyBRAAGIAEMgUQABiABDIIEC4YgAQYywEyBRAAGIAEMgUQLhiABDIFEAAYgARI6gpQjwRY8glwAXgBkAEAmAGBAaABxwWqAQMwLja4AQPIAQD4AQGYAgegAuYFwgIKEAAYsAMY1gQYR8ICChAjGIAEGCcYigXCAgsQABiABBiRAhiKBcICDhAuGIAEGLEDGIMBGIoFwgIOEAAYgAQYsQMYgwEYigXCAg4QLhiABBixAxjRAxjHAcICBBAjGCfCAhAQLhiABBjRAxhDGMcBGIoFwgIKEC4YgAQYQxiKBcICDRAAGIAEGLEDGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgITEC4YgAQYsQMY0QMYQxjHARiKBcICGRAuGIAEGEMYigUYlwUY3AQY3gQY4ATYAQHCAhAQLhiABBixAxhDGIMBGIoFmAMAiAYBkAYIugYGCAEQARgUkgcDMS42oAfaVg&sclient=gws-wiz-serp"
+            target="_blank"
+            class="text-red-500">Suzhou</a
+          >, I came to Toronto for <a
+            href="https://www.utoronto.ca/"
+            target="_blank"
+            class="text-red-500">university</a
+          > in 2021.
+        </p>
+
+        <p class="m-0 font-light text-xl mt-4">
+          I am keen on exploring how <b class="font-bold">technology</b> interacts with <b class="font-bold">humans</b> and enhances our well-being. I also care a lot
+          about <b class="font-bold">sustainability</b>.
+        </p>
+        
+        <p class="m-0 font-light text-xl mt-4">
+          Delighted that you're here! Feel free to explore around.
         </p>
       </div>
       <div class="flex gap-4">
-        <a href={LINKS.github} aria-label="github profile" target="_blank">
+        <!-- <a href={LINKS.github} aria-label="github profile" target="_blank">
           <Button aria-label="github profile">
             <Icon name="ri:github-fill" class="h-6" />
             <span class="sr-only">GitHub Profile</span>
@@ -30,19 +47,19 @@ import { Image } from "astro:assets";
             <Icon name="ri:linkedin-box-fill" class="h-6" />
             <span class="sr-only">Linkedin Profile</span>
           </Button>
-        </a>
-        <a href={LINKS.dribble} aria-label="dribble profile" target="_blank">
+        </a> -->
+        <!-- <a href={LINKS.dribble} aria-label="dribble profile" target="_blank">
           <Button aria-label="dribble profile">
             <Icon name="ri:dribbble-fill" class="h-6" />
             <span class="sr-only">Dribble Profile</span>
           </Button>
-        </a>
-        <Tooltip client:visible>
+        </a> -->
+        <!-- <Tooltip client:visible>
           <Button aria-label="easter egg btn">
             <Icon name="ri:emotion-laugh-line" class="h-6" />
             <span class="sr-only">Easter egg button</span>
           </Button>
-        </Tooltip>
+        </Tooltip> -->
       </div>
     </div>
     <Image
