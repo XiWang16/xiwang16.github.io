@@ -9,29 +9,14 @@ function Tooltip(props: Props) {
   const [clickCount, setClickCount] = createSignal(0);
 
   const messages = [
-    "Hi there!",
-    "Clicked again?",
-    "Still here?",
-    "Persistent, aren't you?",
-    "What's up?",
-    "Again? Really?",
-    "You're curious!",
-    "Not cool!",
-    "Give it a break!",
-    "That's annoying!",
-    "Hands off!",
-    "No more clicks!",
-    "Seriously?!",
-    "Ouch! That hurts!",
-    "You're persistent!",
-    "Why the curiosity?",
-    "I'm getting tired!",
-    "I'm bored!",
-    "Enough's enough!",
-    "Find another hobby!",
-    "Stop, please!",
-    "Okay, last one!",
-    "That's it, I'm done!",
+    "Click to smile! ;)",
+    // "Not a real link -- but one that hopefully will make your day better :)",
+    // "Trying this: hold a pen horizontally in your mouth",
+    // "You're doing great!",
+    // "Hey, you tried your best",
+    // "You're literally spectacular <3",
+    // '"DFTBA"',
+    // "OK, keep clicking if it makes you feel better!!",
   ];
 
   const currentMessage = () => {
@@ -68,7 +53,7 @@ function Tooltip(props: Props) {
       </div>
 
       <Show when={isVisible()}>
-        <div class="absolute left-1/2 -translate-x-1/2 -translate-y-24 mt-1 w-auto max-h-[70px] p-2 bg-black text-white text-center rounded-lg z-10 shadow-custom shadow-primary-500 border border-primary-500 whitespace-normal after:content-[''] after:block after:rotate-45 after:w-4 after:h-4 after:shadow-custom after:shadow-primary-500 after:absolute after:-bottom-2 after:-translate-x-1/2 after:left-1/2 after:bg-black after:z-20">
+        <div class="absolute left-1/2 -translate-x-1/2 -translate-y-24 mt-1 w-auto max-h-[70px] p-2 bg-black text-white text-center rounded-lg z-20 shadow-custom shadow-primary-500 border border-primary-500 whitespace-normal after:content-[''] after:block after:rotate-45 after:w-4 after:h-4 after:shadow-custom after:shadow-primary-500 after:absolute after:-bottom-2 after:-translate-x-1/2 after:left-1/2 after:bg-black after:z-20">
           <p class="w-max">{currentMessage()}</p>
         </div>
       </Show>
