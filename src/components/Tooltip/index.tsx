@@ -9,7 +9,7 @@ function Tooltip(props: Props) {
   const [clickCount, setClickCount] = createSignal(0);
 
   const messages = [
-    "Click to smile! ;)",
+    "Click and smile! ;)",
     // "Not a real link -- but one that hopefully will make your day better :)",
     // "Trying this: hold a pen horizontally in your mouth",
     // "You're doing great!",
